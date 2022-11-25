@@ -1,5 +1,5 @@
-export const ProductInfo = ({ product }) => {
-	const { name, price, description, rating } = product;
+export const ProductInfo = ({ product = [] }) => {
+	const { name, price, description, rating } = product || [];
 
 	return (
 		<>
