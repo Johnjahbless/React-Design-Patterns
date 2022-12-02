@@ -1,6 +1,10 @@
+import { ControlledForm } from "./controlledForm";
+import { UncontrolledForm } from "./uncontrolledForm";
+
 function App() {
 	return (
-		<h1>Your code goes here</h1>
+		//<UncontrolledForm />
+		<ControlledForm />
 	);
 }
 
