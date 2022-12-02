@@ -1,3 +1,6 @@
+import { BigSuccessButton, DangerButton } from "./partialluApply";
+import { RecursiveComponents } from "./RecursiveComponents";
+
 const nestedObject = {
 	a: 1,
 	b: {
@@ -22,7 +25,11 @@ const nestedObject = {
 
 function App() {
 	return (
-		<h1>Your code goes here</h1>
+		<>
+		<DangerButton text="Submit"/>
+		<BigSuccessButton text="Click here to continue"/>
+		<RecursiveComponents data={nestedObject} />
+		</>
 	);
 }
 
